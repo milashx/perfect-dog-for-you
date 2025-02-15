@@ -23,10 +23,11 @@ nav ul li{
     display: inline-block;
     margin-right: 7px;
     cursor: pointer;
+    align-items: center; 
 }
 nav ul li a{
     color: black;
-    
+    text-align: center;
 }
 .site-header{
     background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0,0,0,0.6)), url(puppy.jpg),none;
