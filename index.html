@@ -8,13 +8,19 @@
 </head>
 <body>
     <script>
-        let a = prompt("Enter a place to keep a dog: apartment, house, yard", "apartment")
+         if (!localStorage.getItem("popupShown")) {
+     let a = prompt("Enter a place to keep a dog: apartment, house, yard", "apartment");
 
-        if(a == "apartment") alert("We recommend: small and medium breed dogs")
-        if(a == "house") alert("We recommend: medium and large dog breeds")
-        if(a == "yard") alert("We recommend: large dog breeds")
-        
-        if(a !="apartment" && a !="house" && a !="yard" ) alert("No other location information available")
+     if (a == "apartment") alert("We recommend: small and medium breed dogs");
+     if (a == "house") alert("We recommend: medium and large dog breeds");
+     if (a == "yard") alert("We recommend: large dog breeds");
+
+     if (a != "apartment" && a != "house" && a != "yard") 
+         alert("No other location information available");
+
+    
+     localStorage.setItem("popupShown", "true");
+ }
     </script>
 </body>
 <body>
